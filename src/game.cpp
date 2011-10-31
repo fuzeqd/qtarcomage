@@ -5,7 +5,7 @@
 #include <QDomNodeList>
 #include <QMessageBox>
 #include <QLabel>
-//#include <QPicture>
+
 Game::Game()
 {
 //#if defined(Q_OS_LINUX)
@@ -44,8 +44,7 @@ zip_reader=new QZipReader(path);
 
 
         QByteArray data =zip_reader->fileData("data/deck.xml");//тут описание карт читаю
-//qDebug()<<xml;
-//QString xml(data);
+
 xml_parser(data);
 //         распаковка архива по указанному пути
 //        zip_reader.extractAll(QLatin1String("./"));
